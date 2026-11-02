@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Política de Privacidad de Omar Balatorre</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+  /* Layout: documento legal en una columna de lectura, índice breve arriba, secciones numeradas con anclas. */
+  :root {
+    --bg: #f5f7f8;
+    --surface: #ffffff;
+    --fg: #14212b;
+    --muted: #55636f;
+    --line: #dce2e7;
+    --accent: #0b6b63;
+    --accent-soft: #e2f1ef;
+    --warn-bg: #fff4d6;
+    --warn-fg: #6b4a00;
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1519;
+      --surface: #151d23;
+      --fg: #e7ecef;
+      --muted: #9aa8b3;
+      --line: #26323b;
+      --accent: #5cc9bb;
+      --accent-soft: #14302d;
+      --warn-bg: #3a2f10;
+      --warn-fg: #f1d48a;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1519;
+    --surface: #151d23;
+    --fg: #e7ecef;
+    --muted: #9aa8b3;
+    --line: #26323b;
+    --accent: #5cc9bb;
+    --accent-soft: #14302d;
+    --warn-bg: #3a2f10;
+    --warn-fg: #f1d48a;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    padding-block: 40px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
+  header { display: flex; flex-direction: column; gap: 14px; }
+  .kicker {
+    font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600;
+  }
+  h1 {
+    font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 6vw, 44px);
+    line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -0.01em;
+  }
+  .lede { color: var(--muted); margin: 0; max-width: 62ch; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: var(--muted);
+    padding-top: 14px; border-top: 1px solid var(--line);
+  }
+  .meta strong { color: var(--fg); font-weight: 600; }
+
+  nav {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 22px;
+  }
+  nav h2 { font-family: var(--font-display); font-size: 16px; margin: 0 0 10px; font-weight: 700; }
+  nav ol { margin: 0; padding-left: 1.4em; columns: 2 260px; column-gap: 32px; font-size: 15px; }
+  nav li { padding: 2px 0; break-inside: avoid; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  main { display: flex; flex-direction: column; gap: 36px; }
+  section { display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px; min-width: 0; }
+  h2.sec {
+    font-family: var(--font-display); font-weight: 700; font-size: 22px; line-height: 1.2;
+    margin: 0; text-wrap: balance;
+  }
+  p { margin: 0; max-width: 68ch; }
+  ul { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 6px; max-width: 68ch; }
+  .callout {
+    background: var(--accent-soft); border-radius: 10px; padding: 14px 16px; max-width: 68ch;
+  }
+  .todo {
+    background: var(--warn-bg); color: var(--warn-fg); border-radius: 4px; padding: 1px 6px;
+    font-weight: 600; font-size: 0.95em;
+  }
+  .contact {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 18px 20px; display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px;
+    max-width: 68ch; overflow-wrap: anywhere;
+  }
+  .contact dt { color: var(--muted); font-size: 14px; }
+  .contact dd { margin: 0; }
+  footer { border-top: 1px solid var(--line); padding-top: 18px; font-size: 14px; color: var(--muted); }
+  @media (max-width: 480px) {
+    .contact { grid-template-columns: 1fr; gap: 2px; }
+    .contact dd { margin-bottom: 8px; }
+  }
+</style>
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="kicker">Documento legal</span>
+    <h1>Política de Privacidad</h1>
+    <p class="lede">Explica qué datos personales trata Ruben Omar Balatorre cuando una persona se comunica por Instagram, Facebook o WhatsApp, para qué los usa y cómo puede ejercer sus derechos.</p>
+    <div class="meta">
+      <span><strong>Responsable:</strong> Ruben Omar Balatorre</span>
+      <span><strong>Vigente desde:</strong> 1 de noviembre de 2026</span>
+      <span><strong>Jurisdicción:</strong> República Argentina</span>
+    </div>
+  </header>
+
+  <nav aria-label="Índice">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#responsable">Quién es el responsable</a></li>
+      <li><a href="#alcance">A qué se aplica esta política</a></li>
+      <li><a href="#datos">Qué datos se recogen</a></li>
+      <li><a href="#finalidades">Para qué se usan</a></li>
+      <li><a href="#consentimiento">Consentimiento y base legal</a></li>
+      <li><a href="#whatsapp">WhatsApp Business API</a></li>
+      <li><a href="#terceros">Con quién se comparten</a></li>
+      <li><a href="#transferencias">Transferencias internacionales</a></li>
+      <li><a href="#conservacion">Cuánto tiempo se conservan</a></li>
+      <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#derechos">Derechos de las personas</a></li>
+      <li><a href="#eliminacion">Cómo pedir la eliminación de datos</a></li>
+      <li><a href="#menores">Menores de edad</a></li>
+      <li><a href="#cambios">Cambios en esta política</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <section id="responsable">
+      <h2 class="sec">1. Quién es el responsable</h2>
+      <p>El responsable del tratamiento de los datos personales es Ruben Omar Balatorre, con domicilio en la Ciudad Autónoma de Buenos Aires, Argentina. Presta servicios de coaching y consultoría en liderazgo, organización y comunicación, mediante sesiones individuales, talleres grupales y propuestas para empresas, a través de su cuenta de Instagram @soyvicentebalatorre.</p>
+    </section>
+
+    <section id="alcance">
+      <h2 class="sec">2. A qué se aplica esta política</h2>
+      <p>Se aplica a los datos que se reciben a través de los canales de Meta que se usan para atender consultas y brindar los servicios:</p>
+      <ul>
+        <li>Instagram (mensajes directos, comentarios y formularios de contacto).</li>
+        <li>Facebook y Messenger.</li>
+        <li>WhatsApp, incluida la API de WhatsApp Business Platform.</li>
+        <li>Cualquier aplicación o integración conectada a esos canales.</li>
+      </ul>
+      <p>Esta página no usa cookies propias ni herramientas de seguimiento.</p>
+    </section>
+
+    <section id="datos">
+      <h2 class="sec">3. Qué datos se recogen</h2>
+      <p>Solo se recogen los datos que la persona entrega al escribir o que los propios canales de Meta informan:</p>
+      <ul>
+        <li><strong>Datos de contacto:</strong> nombre, nombre de perfil, número de teléfono, nombre de usuario de Instagram o Facebook y, si se informa, correo electrónico.</li>
+        <li><strong>Contenido de las conversaciones:</strong> mensajes de texto, audios, imágenes, documentos y otros archivos que la persona envía.</li>
+        <li><strong>Datos del servicio:</strong> motivo de la consulta, empresa o cargo si se menciona, turnos o sesiones acordadas, y el estado de la comunicación.</li>
+        <li><strong>Datos técnicos de la mensajería:</strong> fecha y hora de los mensajes, identificadores de la conversación y confirmaciones de entrega o lectura.</li>
+      </ul>
+      <p>No se solicitan datos sensibles. Si una persona decide compartirlos por voluntad propia durante una conversación, se tratan con reserva y solo para responder a esa consulta.</p>
+    </section>
+
+    <section id="finalidades">
+      <h2 class="sec">4. Para qué se usan</h2>
+      <ul>
+        <li>Responder consultas y dar seguimiento a las conversaciones.</li>
+        <li>Coordinar, confirmar y reprogramar sesiones, talleres y reuniones.</li>
+        <li>Enviar información sobre los servicios contratados, materiales y recordatorios.</li>
+        <li>Enviar novedades, contenidos o propuestas comerciales, únicamente a quienes aceptaron recibirlas.</li>
+        <li>Gestionar facturación y cobranza de los servicios.</li>
+        <li>Mejorar la calidad de la atención y cumplir obligaciones legales.</li>
+      </ul>
+      <p>Los datos no se venden ni se usan para fines distintos de los indicados.</p>
+    </section>
+
+    <section id="consentimiento">
+      <h2 class="sec">5. Consentimiento y base legal</h2>
+      <p>El tratamiento se apoya en el consentimiento libre, expreso e informado de la persona, en los términos de la Ley N° 25.326 de Protección de Datos Personales. Escribir por iniciativa propia a un canal de contacto implica aceptar que se use la información para responder esa consulta.</p>
+      <p>Para enviar mensajes por WhatsApp fuera de una conversación iniciada por la persona, se requiere su aceptación previa (opt-in). Esa aceptación puede retirarse en cualquier momento.</p>
+      <div class="callout">Para dejar de recibir mensajes, basta con responder «BAJA» por el mismo canal o escribir a la dirección de contacto de esta política. Se deja de enviar comunicaciones comerciales a la brevedad.</div>
+    </section>
+
+    <section id="whatsapp">
+      <h2 class="sec">6. WhatsApp Business API</h2>
+      <p>La atención por WhatsApp se realiza con la plataforma WhatsApp Business de Meta Platforms, Inc. Los mensajes viajan y se procesan a través de la infraestructura de Meta, que los trata según sus propios términos y su política de privacidad. Meta puede conocer datos como el número de teléfono, la hora de los mensajes y su estado de entrega.</p>
+      <p>Las conversaciones también pueden registrarse en las herramientas de gestión que usa el responsable para atender y ordenar los contactos (por ejemplo, un CRM o una planilla de seguimiento). Solo accede a ellas el responsable y los proveedores técnicos que estrictamente lo necesiten.</p>
+      <p>Más información sobre el tratamiento que hace Meta: <a href="https://www.whatsapp.com/legal/business-terms" target="_blank" rel="noopener noreferrer">Condiciones de WhatsApp Business</a> y <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Política de Privacidad de Meta</a>.</p>
+    </section>
+
+    <section id="terceros">
+      <h2 class="sec">7. Con quién se comparten</h2>
+      <p>Los datos no se ceden a terceros con fines comerciales. Solo se comunican a:</p>
+      <ul>
+        <li><strong>Meta Platforms, Inc.</strong>, por la operación misma de Instagram, Facebook y WhatsApp.</li>
+        <li><strong>Proveedores de servicios</strong> que ayudan a prestar el servicio: alojamiento, mensajería, agenda, videollamadas, facturación y medios de pago, siempre bajo deber de confidencialidad.</li>
+        <li><strong>Autoridades</strong>, cuando una ley o una orden judicial lo exija.</li>
+      </ul>
+    </section>
+
+    <section id="transferencias">
+      <h2 class="sec">8. Transferencias internacionales</h2>
+      <p>Meta y algunos proveedores tecnológicos almacenan y procesan información en servidores ubicados fuera de la Argentina. Al usar estos canales, la persona acepta que sus datos puedan transferirse a esos países. El responsable elige proveedores que declaran medidas de seguridad adecuadas y no transfiere datos con otra finalidad.</p>
+    </section>
+
+    <section id="conservacion">
+      <h2 class="sec">9. Cuánto tiempo se conservan</h2>
+      <p>Los datos se conservan mientras dure la relación de servicio o la consulta y, después, por el tiempo necesario para cumplir obligaciones legales, contables o fiscales, o para atender eventuales reclamos. Cumplido ese plazo, se suprimen o se anonimizan. Una persona puede pedir antes la eliminación de sus datos, según se explica en la sección 12.</p>
+    </section>
+
+    <section id="seguridad">
+      <h2 class="sec">10. Seguridad</h2>
+      <p>Se aplican medidas técnicas y organizativas razonables para proteger la información: acceso restringido con contraseñas, verificación en dos pasos cuando está disponible, y uso de plataformas que cifran las comunicaciones. Ningún sistema es completamente invulnerable; si ocurriera un incidente que afecte datos personales, se informaría a las personas afectadas cuando corresponda.</p>
+    </section>
+
+    <section id="derechos">
+      <h2 class="sec">11. Derechos de las personas</h2>
+      <p>Toda persona titular de datos puede, en cualquier momento:</p>
+      <ul>
+        <li>Acceder a los datos personales que se conservan sobre ella.</li>
+        <li>Rectificar o actualizar datos inexactos o desactualizados.</li>
+        <li>Solicitar la supresión de sus datos.</li>
+        <li>Retirar el consentimiento y oponerse a recibir comunicaciones comerciales.</li>
+      </ul>
+      <p>Para ejercerlos, se debe escribir a la dirección indicada en la sección 15, identificándose con el nombre y el número o perfil con el que se mantuvo contacto. El acceso es gratuito y puede ejercerse a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo.</p>
+      <p>La Agencia de Acceso a la Información Pública (AAIP), en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.</p>
+    </section>
+
+    <section id="eliminacion">
+      <h2 class="sec">12. Cómo pedir la eliminación de datos</h2>
+      <p>Para solicitar que se eliminen los datos que se recibieron a través de Instagram, Facebook o WhatsApp:</p>
+      <ul>
+        <li>Enviar un mensaje por el mismo canal con la palabra «ELIMINAR», o escribir a la dirección de contacto de la sección 15.</li>
+        <li>Indicar el nombre de usuario o el número de teléfono asociado a la conversación.</li>
+        <li>Se confirma la recepción y se eliminan los datos en un plazo máximo de 30 días, salvo los que deban conservarse por obligación legal.</li>
+      </ul>
+      <p>La eliminación alcanza los registros en poder del responsable. Los datos que Meta conserva en sus propias plataformas se gestionan desde la configuración de la cuenta de cada persona en Meta.</p>
+    </section>
+
+    <section id="menores">
+      <h2 class="sec">13. Menores de edad</h2>
+      <p>Los servicios están dirigidos a personas mayores de 18 años. No se recogen a sabiendas datos de menores. Si se advierte que una persona menor envió información, se elimina a la brevedad.</p>
+    </section>
+
+    <section id="cambios">
+      <h2 class="sec">14. Cambios en esta política</h2>
+      <p>Esta política puede actualizarse para reflejar cambios en los servicios, en las plataformas de Meta o en la normativa. La versión vigente es siempre la publicada en esta dirección, con su fecha de entrada en vigencia al comienzo del documento.</p>
+    </section>
+
+    <section id="contacto">
+      <h2 class="sec">15. Contacto</h2>
+      <p>Para consultas sobre privacidad o para ejercer los derechos mencionados:</p>
+      <dl class="contact">
+        <dt>Responsable</dt><dd>Ruben Omar Balatorre</dd>
+        <dt>Correo</dt><dd>rbalatorre@gmail.com</dd>
+        <dt>Instagram</dt><dd>@soyvicentebalatorre</dd>
+        <dt>Domicilio</dt><dd>Ciudad Autónoma de Buenos Aires, Argentina</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>Última actualización: 1 de noviembre de 2026.</footer>
+</div>
+</body>
+</html>
